@@ -8,8 +8,8 @@ $clientId = "d01ba7da-01d7-4b6d-8bb4-fab5d10e0e24"
 $clientSecret = $env:GraphClientSecret
 
 $hostname = "planetdepos.sharepoint.com"
-$sitePath = "sites/ExhibitSubmissionPortal"
-$libraryName = "Exhibits"
+$sitePath = "sites/DigitalJobSubmissionPortal"
+$libraryName = "Jobs"
 $libraryPath = "2024/03 March"
 $folderAgeThresholdDays = 60
 
