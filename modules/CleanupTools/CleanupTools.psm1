@@ -20,12 +20,12 @@ $body = @{
     scope         = "https://graph.microsoft.com/.default"
     client_secret = $clientSecret
     grant_type    = "client_credentials"
-    $folderAgeThresholdDays = 60
 }
 
 $tokenResponse = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token" -Body $body
 $accessToken = $tokenResponse.access_token
 $headers = @{ Authorization = "Bearer $accessToken" }
+$folderAgeThresholdDays = 60
 
 # -------------------------------
 # Resolve Site ID and Drive ID
