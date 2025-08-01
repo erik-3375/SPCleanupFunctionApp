@@ -11,7 +11,7 @@ $hostname = "planetdepos.sharepoint.com"
 $sitePath = "sites/DigitalJobSubmissionPortal"
 $libraryName = "Jobs"
 $libraryPath = "2024/01 January"
-$folderAgeThresholdDays = 60
+
 
 # Call shared logic
 Invoke-FolderCleanup `
@@ -21,5 +21,4 @@ Invoke-FolderCleanup `
     -hostname $hostname `
     -sitePath $sitePath `
     -libraryName $libraryName `
-    -libraryPath $libraryPath `
-    -folderAgeThresholdDays $folderAgeThresholdDays
+    -libraryPath $libraryPath

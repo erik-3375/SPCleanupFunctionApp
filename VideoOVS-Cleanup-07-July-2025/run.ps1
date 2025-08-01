@@ -21,5 +21,4 @@ Invoke-FolderCleanup `
     -hostname $hostname `
     -sitePath $sitePath `
     -libraryName $libraryName `
-    -libraryPath $libraryPath `
-    -folderAgeThresholdDays $folderAgeThresholdDays
+    -libraryPath $libraryPath

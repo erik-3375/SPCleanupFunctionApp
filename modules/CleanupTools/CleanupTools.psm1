@@ -6,8 +6,8 @@ function Invoke-FolderCleanup {
         [string]$hostname,
         [string]$sitePath,
         [string]$libraryName,
-        [string]$libraryPath,
-        [int]$folderAgeThresholdDays
+        [string]$libraryPath
+        #[int]$folderAgeThresholdDays
     )
 
 # Place your complete cleanup logic here, like you've already built.
@@ -20,6 +20,7 @@ $body = @{
     scope         = "https://graph.microsoft.com/.default"
     client_secret = $clientSecret
     grant_type    = "client_credentials"
+    $folderAgeThresholdDays = 60
 }
 
 $tokenResponse = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token" -Body $body
