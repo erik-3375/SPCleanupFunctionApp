@@ -25,7 +25,7 @@ $body = @{
 $tokenResponse = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token" -Body $body
 $accessToken = $tokenResponse.access_token
 $headers = @{ Authorization = "Bearer $accessToken" }
-$folderAgeThresholdDays = 60
+$folderAgeThresholdDays = 20
 
 # -------------------------------
 # Resolve Site ID and Drive ID
