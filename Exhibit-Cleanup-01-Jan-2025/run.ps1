@@ -10,7 +10,7 @@ $clientSecret = $env:GraphClientSecret
 $hostname = "planetdepos.sharepoint.com"
 $sitePath = "sites/ExhibitSubmissionPortal"
 $libraryName = "Exhibits"
-$libraryPath = "2025/02 February"
+$libraryPath = "2025/01 January"
 $folderAgeThresholdDays = 60
 
 # Call shared logic
