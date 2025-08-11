@@ -20,7 +20,7 @@ function Invoke-FolderCleanup {
     $tokenResponse = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token" -Body $body
     $accessToken = $tokenResponse.access_token
     $headers = @{ Authorization = "Bearer $accessToken" }
-    $folderAgeThresholdDays = 60
+    $folderAgeThresholdDays = 20
 
     # Resolve Site & Drive
     $siteUrl = "https://graph.microsoft.com/v1.0/sites/${hostname}:/${sitePath}"
