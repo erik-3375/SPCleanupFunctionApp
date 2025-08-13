@@ -11,7 +11,6 @@ $hostname = "planetdepos.sharepoint.com"
 $sitePath = "sites/ExhibitSubmissionPortal"
 $libraryName = "Exhibits"
 $libraryPath = "2025/12 December"
-$folderAgeThresholdDays = 60
 
 # Call shared logic
 Invoke-FolderCleanup `
